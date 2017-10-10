@@ -51,13 +51,13 @@ a:hover {
 	height: 75px;
 }
 .phone-top {
-	margin-top: 20px;
+	margin-top: 32px;
 }
 .phone-top img {
 	height: 30px;
     position: absolute;
     left: -15px;
-    top: 32px;
+    top: 42px;
 }
 .phone-top span {
 	font-size: 20px;
@@ -120,6 +120,15 @@ a:hover {
 	position: relative;
     top: 115px;
     text-transform: uppercase;
+}
+.catalog-mobile-main a {
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px solid #070707;
+	color: #070707;
+	padding: 12px;
+	text-decoration: none;
 }
 .about-main p{
 	font-size: 18px;
@@ -190,7 +199,6 @@ footer .price-order,
 	    padding-left: 15px;
 	    width: 20%;
 	}
-
 }
 @media (max-width: 1199px) {
 	.padding-left-right {
@@ -200,6 +208,21 @@ footer .price-order,
 	footer .price-order,
 	.footer-arrow {
 		margin-left: 20px;
+	}
+	.logo-block {
+		margin: 20px 0 0;
+	}
+	.logo-block img{
+		height: 65px;
+	}
+	.phone-top {
+	    margin: 38px -15px 0 -3px;
+	}
+	.phone-top img {
+	    top: 48px;
+	}
+	.phone-top span {
+	    font-size: 17px;
 	}
 }
 @media (max-width: 991px) {
