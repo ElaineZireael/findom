@@ -13,4 +13,13 @@ $(document).ready(function() {
 			$(".search-collapse").css("display", "none");
 	});
 
+
+	$('.slider-main').slick({
+		dots: true,
+	  	infinite: true,
+	  	speed: 300,
+	  	slidesToShow: 1
+	});
+
+
 });
