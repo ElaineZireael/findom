@@ -8,14 +8,16 @@
 		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		
 	</head>
 	<body>
 		<header>
 			<div class="top-panel">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2 city-and-time">
+						<div class="hidden-xs hidden-sm col-md-2 city-and-time">
 							<div class="clearfix">
 								<div class="city">Хабаровск</div>
 								<div class="time">15:30</div>
@@ -25,34 +27,64 @@
 								<div class="time">8:30</div>
 							</div>
 						</div>
-						<div class="col-md-2">
-							<div class="logo-block">
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<a href="#" class="logo-block">
 								<img src="images/logo.png" alt="">
-							</div>
+							</a>
 						</div>
-						<div class="col-md-3">
-							<div class="phone-top">
+						<div class="col-xs-8 col-sm-6 col-md-3">
+							<div class="hidden-xs phone-top">
 								<img src="images/phone_white.png" alt="">
 								<div><span>+7(4212)41-35-00</span> Хабаровск</div>
 								<div><span>+7(423)292-01-87</span> Владивосток</div>
 							</div>
+							<div class="search-profile-menu-xs visible-xs">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+						        </button>
+						        <a href="#" class="profile-block">
+									<img src="images/profile_white.png" alt="">
+								</a>
+								<a href="#" class="search-block">
+									<img src="images/loope_white.png" alt="">
+								</a>								
+							</div>
 						</div>
-						<div class="col-md-2">
-							<input type="text" class="search" placeholder="Поиск по сайту">
+						<div class="hidden-xs col-sm-1 col-md-2">
+							<form action="">
+								<input type="text" class="search hidden-sm" placeholder="Поиск по сайту">
+							</form>							
+							<a href="#" class="search-block visible-sm">
+								<img src="images/loope_white.png" alt="">
+							</a>
 						</div>
-						<div class="col-md-1">
-							
+						<div class="hidden-xs col-sm-1 col-md-1">
+							<a href="#" class="cart-block">
+								<img src="images/cart.png" alt="">
+							</a>
 						</div>
-						<div class="col-md-2">
-							
+						<div class="hidden-xs col-sm-1 col-md-2">
+							<a href="#" class="profile-block">
+								<img src="images/profile_white.png" alt="" class="visible-sm">
+								<div class="hidden-sm">Личный кабинет</div>
+							</a>
 						</div>
+						<!-- <div class="hidden-xs col-sm-1">
+							<button type="button" class="navbar-toggle visible-sm" data-toggle="collapse" data-target=".navbar-collapse">
+											            <span class="icon-bar"></span>
+											            <span class="icon-bar"></span>
+											            <span class="icon-bar"></span>
+											          </button>
+						</div> -->
 					</div>
 				</div>
 			</div>
 			<div id="top-menu">
 				<div class="container">
 					<div class="row padding-left-right">
-						<div class="col-md-12 navbar-collapse">
+						<div class="col-md-12 collapse navbar-collapse">
 							<ul class="nav navbar-nav">
 								<li>
 									<a href="#">О компании</a>
@@ -84,6 +116,11 @@
 								<div>Заявка</div>
 							</a>
 						</div>
+					</div>
+					<div class="row search-collapse">
+						<form action="">
+							<input type="text" class="search" placeholder="Поиск по сайту">
+						</form>
 					</div>
 				</div>
 			</div>
@@ -281,6 +318,6 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer><script src="js/script.js"></script>
 	</body>
 </html>
