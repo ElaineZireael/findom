@@ -9,8 +9,12 @@ $(document).ready(function() {
 	});
 
 	$(window).resize(function() {
-		if ($(this).width() >991)
+		if ($(this).width() > 991)
 			$(".search-collapse").css("display", "none");
+
+			var news_detail_pic_width = $(".news-detail .detail-picture").width();
+			$(".news-detail .detail-picture").css("height", news_detail_pic_width / 1.6285);
+
 	});
 
 
