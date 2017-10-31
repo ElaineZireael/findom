@@ -14,7 +14,12 @@ a:hover {
 	color: #00ffff;
 	text-decoration: none;
 }
-
+.margin-top-20 {
+	margin-top: 20px;
+}
+.margin-top-30 {
+	margin-top: 30px;
+}
 
 /*Menu burger*/
 
@@ -31,7 +36,12 @@ button.navbar-toggle .icon-bar+.icon-bar {
 	margin-top: 8px;
 }
 
-
+.breadcrumb {
+	background-color: transparent;
+}
+.breadcrumb a {
+	color: #a9b3b6;
+}
 
 .margin-left-20 {
 	margin-left: 20px;
@@ -131,7 +141,9 @@ a.back-to-list {
 #top-menu li a:hover {
 	background-color: #fff;
 }
-
+#top-menu .dropdown-menu>li>a {
+	padding: 3px 20px;
+}
 
 /*Seacrh*/
 
@@ -241,12 +253,15 @@ button.slick-next:before {
 .catalog-main,
 .about-main,
 .news-list,
-.news-detail {
+.news-detail,
+.contacts {
 	padding-top: 30px;
 	padding-bottom: 55px;
 	text-align: center;
 }
-.catalog-main h2, .news-list h1 {
+.catalog-main h2,
+.news-list h1,
+.contacts h1 {
 	margin-bottom: 35px;
 }
 .catalog-main .item {
@@ -378,6 +393,94 @@ button.slick-next:before {
 		font-size: 18px;
 	}
 }
+
+/*Contacts*/
+.contacts p {
+	text-align: left;
+	padding-left: 8px;
+	font-size: 16px;
+	/* margin: 0; */
+}
+.contacts .on-map {
+	color: #09b5b5;
+	text-align: left;
+	display: block;
+	padding-left: 8px;
+	text-decoration: underline;
+}
+.contacts .contact {
+	margin-bottom: 35px;
+}
+.contacts .contact-name {
+	font-size: 18px;
+	color: #09b5b5;
+}
+.contacts .contact-place {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.contacts .post {
+	font-style: italic;
+}
+.contacts .tel span {
+	font-weight: 800;
+}
+.contacts .email a {
+	color: #a9b3b6;
+}
+.contacts .slide-contact {
+	text-align: left;
+    padding-left: 23px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #000505;
+    text-decoration: underline;
+}
+.contacts .map-block {
+	padding-top: 30px;
+	padding-bottom: 3px;
+}
+.contacts .map {
+	background: #f3f3a5;
+	height: 225px;
+}
+.contacts .map-obj {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #a9b3b6;
+}
+.contacts .map-obj .map-obj-name {
+    margin: 10px 0 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+}
+@media (max-width: 991px) {
+	.contacts-floated-offices + div {
+		margin-top: 30px;
+	}
+	.contacts .map {
+		height: 341px;
+	}
+}
+@media (max-width: 767px) {
+	.contacts .contact {
+		display: none;
+	}
+	.contacts-floated-offices + div {
+		margin-top: 0;
+	}
+	.contacts .map {
+		height: 220px;
+	}
+}
+@media (min-width: 992px) {
+	.contacts-floated-offices {
+		float: right;
+	}
+}
+
+
 
 
 /*Footer*/
