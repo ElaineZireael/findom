@@ -4,6 +4,9 @@ body {
 h1 {
 	font-size: 30px;
 }
+h2 {
+	font-size: 27px;
+}
 h1, h2 {
 	text-transform: uppercase;
 }
@@ -138,7 +141,9 @@ a.back-to-list {
 	text-transform: uppercase;
 	padding: 22px 15px;
 }
-#top-menu li a:hover {
+#top-menu li.active,
+#top-menu li a:hover,
+#top-menu li a:focus {
 	background-color: #fff;
 }
 #top-menu .dropdown-menu>li>a {
@@ -254,14 +259,17 @@ button.slick-next:before {
 .about-main,
 .news-list,
 .news-detail,
-.contacts {
+.contacts,
+.production {
 	padding-top: 30px;
 	padding-bottom: 55px;
 	text-align: center;
 }
 .catalog-main h2,
 .news-list h1,
-.contacts h1 {
+.contacts h1,
+.production h1,
+.production h2 {
 	margin-bottom: 35px;
 }
 .catalog-main .item {
@@ -296,7 +304,8 @@ button.slick-next:before {
 
 /*About company on main*/
 
-.about-main p {
+.about-main p,
+.production p {
 	font-size: 18px;
 	text-align: justify;
 }
@@ -350,6 +359,10 @@ button.slick-next:before {
 .news-list a {
 	color: #a9b3b6;
 	text-decoration: underline;
+}
+.news-list a:hover {
+	color: #09b5b5;
+	text-decoration: none;
 }
 .news-detail {
 	text-align: left;
@@ -456,7 +469,7 @@ button.slick-next:before {
     font-size: 18px;
 }
 @media (max-width: 991px) {
-	.contacts-floated-offices + div {
+	.contacts-floated-offices + a + div {
 		margin-top: 30px;
 	}
 	.contacts .map {
@@ -467,7 +480,7 @@ button.slick-next:before {
 	.contacts .contact {
 		display: none;
 	}
-	.contacts-floated-offices + div {
+	.contacts-floated-offices + a + div {
 		margin-top: 0;
 	}
 	.contacts .map {
@@ -481,6 +494,61 @@ button.slick-next:before {
 }
 
 
+/*Production*/
+
+.prod-item {
+	padding: 23px 15px;
+	text-align: left;
+	display: table;
+}
+.prod-link {
+	display: table-cell;
+    vertical-align: middle;
+    width: 355px;
+    font-size: 18px;
+    color: #000505;
+    text-decoration: underline;
+}
+.prod-link:hover, .prod-link:focus {
+    color: #09b5b5;
+}
+.prod-icon {
+	width: 78px;
+	height: 78px;
+}
+.prod-descr {
+	margin-top: 50px;
+	display: none;
+}
+.prod-descr .prod-descr-img {
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 326px;
+    margin: 20px auto;
+}
+@media (max-width: 991px) {
+	.prod-descr .prod-descr-img {
+		height: 245px;
+	}
+	.prod-link {
+	    width: 230px;
+	}
+}
+@media (max-width: 767px) {
+	.prod-descr .prod-descr-img {
+		max-width: 320px;
+	}
+	.prod-item {
+	    width: 290px;
+	    margin: auto;
+	    padding-left: 0;
+	    padding-right: 0;
+	} 
+	.prod-link {
+	    width: 190px;
+	}    
+}
 
 
 /*Footer*/

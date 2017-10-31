@@ -19,6 +19,25 @@ $(document).ready(function() {
 			neighbour_children.slideDown();
 	});
 
+	$(".prod-link").click(function() {
+
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(".prod-descr."+$(this).data("target")).slideUp();
+		} else {
+			$(".prod-descr").css("display","none");
+			$(".prod-descr."+$(this).data("target")).slideDown();
+			$(".prod-link").removeClass("active");
+			$(this).addClass("active");
+
+			if ($(window).width() < 768) {
+				$('html, body').animate({
+				    scrollTop: $(".prod-descr."+$(this).data("target")).offset().top
+				}, 1000);
+			}
+		}
+	});
+
 	$(window).resize(function() {
 		if ($(this).width() > 991)
 			$(".search-collapse").css("display", "none");
