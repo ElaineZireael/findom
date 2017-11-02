@@ -38,6 +38,44 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".ref-link").click(function() {
+
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(".ref-descr."+$(this).data("target")).slideUp();
+		} else {
+			$(".ref-descr").css("display","none");
+			$(".ref-descr."+$(this).data("target")).slideDown();
+			$(".ref-link").removeClass("active");
+			$(this).addClass("active");
+
+			if ($(window).width() < 768) {
+				$('html, body').animate({
+				    scrollTop: $(".ref-descr."+$(this).data("target")).offset().top
+				}, 1000);
+			}
+		}
+	});
+
+	$(".exserv-link").click(function() {
+
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(".exserv-descr."+$(this).data("target")).slideUp();
+		} else {
+			$(".exserv-descr").css("display","none");
+			$(".exserv-descr."+$(this).data("target")).slideDown();
+			$(".exserv-link").removeClass("active");
+			$(this).addClass("active");
+
+			if ($(window).width() < 768) {
+				$('html, body').animate({
+				    scrollTop: $(".exserv-descr."+$(this).data("target")).offset().top
+				}, 1000);
+			}
+		}
+	});
+
 	$(window).resize(function() {
 		if ($(this).width() > 991)
 			$(".search-collapse").css("display", "none");
