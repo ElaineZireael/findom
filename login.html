@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="slick/slick.css">
 		<link rel="stylesheet" href="slick/slick-theme.css"/>
 		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/colors.css">	
+		<link rel="stylesheet" href="css/styles.css">	
+		<link rel="stylesheet" href="css/colors.css">
 	</head>
 	<body>
 		<header>
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 						<div class="hidden-xs col-sm-1 col-md-2">
-							<form action="">
+							<form class="search-form" action="">
 								<input type="text" class="search hidden-sm" placeholder="Поиск">
 								<a href="#" class="search-loope hidden-sm">
 									<img src="images/loope_white.png" alt="">
@@ -88,8 +88,20 @@
 								<li>
 									<a href="catalog.html">Каталог</a>
 								</li>
-								<li>
-									<a href="#">Услуги</a>
+								<li class="dropdown">
+									<a href="#" class="data-toggle" data-toggle="dropdown">Услуги</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">
+												Услуга 1
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												Услуга 2
+											</a>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<a href="production.html">Производство</a>
@@ -127,24 +139,30 @@
 
 		<div class="container content">
 			<div class="row breadcrumb">
-				<a href="index.html">Главная</a> / <a href="news.html">Новости</a> / Гибка арматуры
+				<a href="index.html">Главная</a> / <a href="#">Личный кабинет</a> / Вход
 			</div>
-			<div class="row padding-left-right news-detail">
+			<div class="row login-registration padding-left-right">
 				<div class="col-xs-12">
-					<h1>Гибка арматуры</h1>
-					<p class="date">25.08.17</p>
-					<p class="preview-text">На производственных площадях металлобазы ООО "Финдом" на Узловой, 12 установлено новое профессиональное оборудование - станок для гибки арматуры</p>
-					<div class="detail-picture back-image" style="background-image: url(images/slider/7.jpg);"></div>
-					<div class="detail-text">
-						<p>Аппарат позволяет выполнять загибания арматурных заготовок, получая при этом готовые элементы. Достоинствами станка являются высокая производительность и эффективность, точность, возможность за несколько секунд придать необходимую форму арматуре даже самых больших диаметров.</p>
-						<p>Гибка арматуры должна производиться с соблюдением технологии - от этого зависит надежность возводимых конструкций и зданий. Разрешается сгибать арматурные стержни исключительно механическим способом, не допуская острых углов в месте изгиба.</p>
-						<p>Деталь, подвергаемую изменению, фиксируют между центральным и упорным роликом (валом) устройства. Третьим роликом (гибочным) металл изгибают в нужную сторону на требуемыый угол. Закругление можно делать как по часовой стрелке, так и против. Препятствием для деформации вдоль всей длины служит упорный вал, не позволяющий провернуться или сдвинуться незадейственной части заготовки. Закругления требуется делать плавными - оптимальный радиус составляет 10 - 15 диаметров арматуры.</p>
-						<p>Все виды арматуры требуется гнуть в холодном состоянии без нарушения их целостности, если иное не указано проектировщиком.</p>
-					</div>
-					<a href="news.html" class="back-to-list">Вернуться к списку</a>
+					<h1>Личный кабинет</h1>
+					<h2>Вход</h2>
+					<form action="">
+						<input type="text" placeholder="E-MAIL">
+						<input type="text" placeholder="ПАРОЛЬ">
+						<label for="remember">
+							<input type="checkbox" id="remember">Запомнить
+						</label>
+						<input type="submit" value="ВОЙТИ">
+						<label for="forgot">
+							<a href="#" id="forgot">Забыли пароль?</a>
+						</label>
+						<label for="registration">
+							<a href="#" id="registration">Регистрация</a>
+						</label>
+					</form>
 				</div>
 			</div>
 		</div>
+
 
 		<footer>
 			<div class="container">

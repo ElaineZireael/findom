@@ -1,0 +1,166 @@
+a:hover, a:focus,
+.time,
+.search,
+.profile-block div,
+.slider-main .slide-text,
+.footer-contacts a {
+	color: #00ffff;
+}
+.breadcrumb a,
+a.back-to-list,
+.city-and-time, .phone-top,
+.news-list .date, .news-detail .date,
+.news-list a,
+.contacts .email a,
+.login-registration a,
+.personal form small,
+.basket form small,
+.basket .order-summary small,
+footer,
+footer a {
+	color: #a9b3b6;
+}
+button.navbar-toggle .icon-bar,
+#top-menu,
+.order-history-table-row > div > span.is-being-performed {
+	background-color: #a9b3b6;
+}
+.search,
+.profile-block div,
+.catalog-detail .weight-price input,
+.order-history-table-row > div > span,
+.basket-table-item select {
+	border-color: #a9b3b6;
+}
+.city-and-time>div:first-of-type,
+.news-list .item:after,
+.contacts .map-obj,
+.order-history-table-row,
+.catalog-detail .catalog-table-row > div,
+.order-history-table-row,
+.basket-table-item,
+.basket-table .remove-block,
+.search-result-table-element {
+	border-bottom-color: #a9b3b6;
+}
+.catalog-detail .catalog-table-row,
+.order-history-table-row > div:first-of-type,
+.order-history-table-row,
+.basket-table-item > div:first-of-type,
+.search-result-table-element {
+	border-left-color: #a9b3b6;
+}
+.catalog-detail .catalog-table-row,
+.catalog-detail .catalog-table-row > div,
+.order-history-table-row > div,
+.basket-table-item > div,
+.basket-table .remove-block,
+.search-result-table-element {
+	border-right-color: #a9b3b6;
+}
+.order-history-table-row.head-row,
+.order-history-table-row:first-of-type {
+	border-top-color: #a9b3b6;
+}
+.contacts .slide-contact,
+.prod-link, .ref-link, .exserv-link,
+.personal p.set-personal-photo,
+.personal .pers-link,
+.no-such-page a,
+.search-result-elements a,
+.search-result-element-name a {
+	color: #000505;
+}
+.top-panel, footer,
+.catalog-detail .catalog-descr,
+.catalog-detail .catalog-table.catalog-table-props > div:first-of-type,
+.basket-table-header {
+	background-color: #000505;
+}
+.search-collapse .search {
+	border-color: #000505;
+}
+.breadcrumb,
+.search {
+	background-color: transparent;
+}
+#top-menu a,
+.catalog .item,
+.catalog-mobile-main a {
+	color: #070707;
+}
+.catalog-mobile-main a {
+	border-bottom-color: #070707;
+}
+.catalog-detail .catalog-descr,
+.catalog-detail .catalog-table.catalog-table-props > div:first-of-type,
+.catalog-detail .catalog-table-head,
+.catalog-detail .to-basket a,
+.login-registration input[type="submit"],
+.feedback input[type="submit"],
+.personal input[type="submit"],
+.basket form input[type="submit"],
+.basket-table-header,
+.search-result-table-header,
+.search-result-element-description .to-basket-link {
+	color: #fff;	
+}
+#top-menu li.active,
+#top-menu li a:hover,
+#top-menu li a:focus,
+.order-history-table-row > div > span.in-transit {
+	background-color: #fff;
+}
+ul.slick-dots li.slick-active button,
+.order-history-table-row > div > span.refusal {
+	background-color: #000;
+}
+ul.slick-dots li button {
+	border-color: #000;
+}
+.news-list a:hover,
+a.back-to-list:hover,
+.contacts .on-map,
+.contacts .contact-name,
+.prod-link:hover, .prod-link:focus,
+.ref-link:hover, .ref-link:focus,
+.exserv-link:hover, .exserv-link:focus,
+.login-registration a:hover,
+.login-registration a:focus,
+.personal p.set-personal-photo:hover,
+.personal p.set-personal-photo:focus,
+.personal .pers-link:hover,
+.personal .pers-link:focus,
+.no-such-page a:hover,
+.no-such-page a:focus,
+.search-result-elements a:hover,
+.search-result-elements a:focus,
+.search-result-element-name a:hover,
+.search-result-element-name a:focus {
+	color: #09b5b5;
+}
+.catalog-detail .to-basket a,
+.login-registration input[type="submit"],
+.feedback input[type="submit"],
+.personal input[type="submit"],
+.basket form input[type="submit"],
+.order-history-table-row > div > span.delivered,
+.search-result-element-description .to-basket-link {
+	background-color: #09b5b5;
+}
+.basket .order-total-sum {
+	border-color: #09b5b5;	
+}
+.contacts .map {
+	background-color: #f3f3a5;	
+}
+.search-result-table-header,
+.catalog-detail .catalog-table-head {
+    background-color: #3e3f3f;
+}
+@media (max-width: 767px) {
+	.catalog-table-row-name {
+		color: #fff;
+		background-color: #3e3f3f;
+	}
+}
